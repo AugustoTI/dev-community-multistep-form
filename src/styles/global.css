@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-poppins: 'Poppins', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
+
+    --primary: 247 75% 5%;
+    --secondary: 243 100% 93%;
+    --accent: 242 100% 62%;
+    --background: 240 60% 99%;
+    --default: 247 75% 5%;
+  }
+
+  :root,
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    @apply bg-background;
+  }
+
+  #root {
+    @apply flex items-center justify-center;
+  }
+}
